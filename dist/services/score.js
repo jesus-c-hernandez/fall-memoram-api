@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getScores = exports.insertScore = void 0;
 const models_1 = require("../models");
 const getScores = () => __awaiter(void 0, void 0, void 0, function* () {
-    const respGetAll = yield models_1.ScoreModel.find({}).sort({ score: -1 }).limit(10);
+    const respGetAll = yield models_1.ScoreModel.find({}).sort({ score: 1 }).limit(10);
     return respGetAll;
 });
 exports.getScores = getScores;

@@ -2,7 +2,7 @@ import { ScoreModel } from '../models';
 import { Score } from '../interfaces';
 
 const getScores = async () => {
-  const respGetAll = await ScoreModel.find({}).sort({ score: -1 }).limit(10);
+  const respGetAll = await ScoreModel.find({}).sort({ score: 1 }).limit(10);
   return respGetAll;
 };
 

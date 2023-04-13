@@ -7,6 +7,6 @@ const router = Router();
 // score [GET]
 router.get('/', getAllScores);
 // score [POST]
-router.post('/', verifyToken, postScore);
+router.post('/', postScore);
 
 export default { router };
